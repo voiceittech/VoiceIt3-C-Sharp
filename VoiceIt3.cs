@@ -16,7 +16,7 @@ namespace VoiceIt3API
         public VoiceIt3(string apiKey, string apiToken)
         {
             client = new RestClient();
-            client.BaseUrl = new Uri("https://api.voiceit.io");
+            client.BaseUrl = new Uri("https://qpi.voiceit.io");
             client.Authenticator = new HttpBasicAuthenticator(apiKey, apiToken);
             client.AddDefaultHeader("platformId", "30");
             client.AddDefaultHeader("platformVersion", VERSION);
@@ -36,7 +36,7 @@ namespace VoiceIt3API
         {
             client = new RestClient();
             client.Proxy = new WebProxy(proxyUrl, proxyPort);
-            client.BaseUrl = new Uri("https://api.voiceit.io");
+            client.BaseUrl = new Uri("https://qpi.voiceit.io");
             client.Authenticator = new HttpBasicAuthenticator(apiKey, apiToken);
             client.AddDefaultHeader("platformId", "30");
             client.AddDefaultHeader("platformVersion", VERSION);
