@@ -3,9 +3,17 @@
 
 A C# wrapper for VoiceIt's API 3.0 featuring Voice + Face Verification and Identification.
 
+## Installation
+
+```bash
+git clone https://github.com/voiceittech/VoiceIt3-C-Sharp.git
+```
+
+Add the project as a reference in your solution.
+
 ## Getting Started
 
-Sign up for a free Developer Account at [VoiceIt.io](https://voiceit.io/signup). Visit the settings tab to view your API Key and Token. 
+Sign up for a free Developer Account at [VoiceIt.io](https://voiceit.io/pricing). Visit the settings tab to view your API Key and Token. 
 
 ## API calls
 You can visit our [HTTP API 3.0 Documentation](https://api.voiceit.io/?csharp#introduction) for detailed information on each API call.
