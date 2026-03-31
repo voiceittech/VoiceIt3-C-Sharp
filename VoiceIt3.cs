@@ -323,10 +323,10 @@ namespace VoiceIt3API
             var request = new RestRequest
             {
                 Resource = "/groups/removeUser",
-                Method = RestSharp.Method.PUT
+                Method = RestSharp.Method.DELETE
             };
-            request.AddParameter("groupId", groupId);
-            request.AddParameter("userId", userId);
+            request.AddQueryParameter("groupId", groupId);
+            request.AddQueryParameter("userId", userId);
 
             if (notificationUrl != "")
             {
