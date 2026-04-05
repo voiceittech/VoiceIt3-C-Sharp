@@ -24,10 +24,11 @@ Sign up at [voiceit.io/pricing](https://voiceit.io/pricing) to get your API Key 
 
 ## API calls
 You can visit our [HTTP API 3.0 Documentation](https://api.voiceit.io/?csharp#introduction) for detailed information on each API call.
-
 ## Support
 
-Contact us with any questions at support@voiceit.tech
+If you find this SDK useful, please consider giving it a star on GitHub — it helps others discover the project!
+
+[![GitHub stars](https://img.shields.io/github/stars/voiceittech/VoiceIt3-C-Sharp?style=social)](https://github.com/voiceittech/VoiceIt3-C-Sharp/stargazers)
 
 ## License
 
