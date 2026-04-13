@@ -9,7 +9,7 @@ namespace VoiceIt3API
 {
     public class VoiceIt3
     {
-        const string VERSION = "2.8.0";
+        const string VERSION = "3.0.4";
         string notificationUrl = "";
         RestClient client;
 
