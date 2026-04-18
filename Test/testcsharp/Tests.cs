@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.IO;
 using System.Web.Script.Serialization;
-using VoiceIt3API;
+using voiceit3API;
 
 namespace testcsharpwrapper
 {
@@ -107,7 +107,7 @@ namespace testcsharpwrapper
 
             string viapikey = Environment.GetEnvironmentVariable("VIAPIKEY");
             string viapitoken = Environment.GetEnvironmentVariable("VIAPITOKEN");
-            VoiceIt3 myVoiceIt = new VoiceIt3(viapikey, viapitoken);
+            voiceit3 myVoiceIt = new voiceit3(viapikey, viapitoken);
             System.IO.File.WriteAllText(Environment.GetEnvironmentVariable("HOME") + "/platformVersion", myVoiceIt.GetVersion());
             string x = "";
 

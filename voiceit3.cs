@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using RestSharp;
 using RestSharp.Authenticators;
 
-namespace VoiceIt3API
+namespace voiceit3API
 {
-    public class VoiceIt3
+    public class voiceit3
     {
         const string VERSION = "4.0.0";
         string notificationUrl = "";
@@ -25,18 +25,18 @@ namespace VoiceIt3API
             return response.Content ?? "";
         }
 
-        public VoiceIt3(string apiKey, string apiToken)
+        public voiceit3(string apiKey, string apiToken)
             : this(apiKey, apiToken, "https://api.voiceit.io", proxy: null) { }
 
-        public VoiceIt3(string apiKey, string apiToken, string customUrl)
+        public voiceit3(string apiKey, string apiToken, string customUrl)
             : this(apiKey, apiToken, customUrl, proxy: null) { }
 
         // Overloaded constructor for proxy support
-        public VoiceIt3(string apiKey, string apiToken, string proxyUrl, int proxyPort)
+        public voiceit3(string apiKey, string apiToken, string proxyUrl, int proxyPort)
             : this(apiKey, apiToken, "https://api.voiceit.io",
                    proxy: new WebProxy(proxyUrl, proxyPort)) { }
 
-        VoiceIt3(string apiKey, string apiToken, string baseUrl, IWebProxy proxy)
+        voiceit3(string apiKey, string apiToken, string baseUrl, IWebProxy proxy)
         {
             var options = new RestClientOptions(baseUrl)
             {

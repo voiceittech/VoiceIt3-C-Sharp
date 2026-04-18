@@ -1,7 +1,7 @@
 using System;
-using VoiceIt3API;
+using voiceit3API;
 
-/// Test script for VoiceIt3 C# SDK
+/// Test script for voiceit3 C# SDK
 class TestExample {
     static void Main(string[] args) {
         string apiKey = Environment.GetEnvironmentVariable("VOICEIT_API_KEY") ?? "";
@@ -12,7 +12,7 @@ class TestExample {
             return;
         }
 
-        VoiceIt3 vi = new VoiceIt3(apiKey, apiToken);
+        voiceit3 vi = new voiceit3(apiKey, apiToken);
 
         Console.WriteLine("CreateUser: " + vi.CreateUser());
         Console.WriteLine("GetAllUsers: " + vi.GetAllUsers());
